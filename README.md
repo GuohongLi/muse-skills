@@ -12,6 +12,9 @@ Professional portrait retouching workflow with automatic secondary composition. 
 ### vcg-retouch（视觉中国修图）
 Stock-photo-grade retouching to Visual China Group (VCG) quality standards, with automatic secondary composition. Trigger: user says 「修图」/「视觉中国修图」 and attaches a photo. Flow: diagnose → plan 1–4 recompositions → retouch → verify → upscale to 2K if needed → deliver. Auto-upscale rule: if the longest side is under 2560px, run one upscale pass (AI upscaler preferred, high-quality interpolation fallback).
 
+## Examples / 示例
+Before/after pairs in [`examples/`](examples/) — three landscape sets retouched with `vcg-retouch` （宝塔夜景全景/长焦、瀑布长焦）, each with a note on what was diagnosed and fixed.
+
 ## Requirements / 环境要求
 The assistant needs an **image generation/editing capability** (able to edit or redraw a photo from instructions). An AI upscaler (e.g. Real-ESRGAN) is optional; Lanczos/bicubic interpolation works as fallback.
 
